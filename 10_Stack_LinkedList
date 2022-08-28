@@ -1,0 +1,48 @@
+class StackNode<T> {
+
+	T info;
+	StackNode<T> next;
+
+	// Constructor
+
+	StackNode(T data) {
+		info = data;
+	}
+}
+
+class LinkedStack<T> {
+	StackNode<T> top;
+
+	// methods
+	public void PUSH(T c) {
+		StackNode<T> n = new StackNode(c);
+		n.next = top;
+		top = n;
+	}
+
+	public T POP() {
+		if (!isEmpty()) {
+			StackNode<T> Temp = top;
+			top = top.next;
+			return Temp.info;
+		} else {
+			System.out.println("underflow");
+			return null;
+		}
+	}
+
+	public Boolean isEmpty() {
+		if (top == null) {
+			return true;
+		}
+		return false;
+	}
+}
+
+public class LLStack {
+
+	public static void main(String[] args) {
+
+	}
+
+}
