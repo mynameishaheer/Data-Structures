@@ -1,4 +1,3 @@
-
 class Nodee {
 	int data;
 	Nodee next;
