@@ -65,5 +65,34 @@ class LinkedListQueue<T> {
 		}
 		System.out.println(temp.data + " ");
 	}
+	public class QueueImplimentation {
+
+	public static void main(String[] args) {
+
+		LinkedListQueue list = new LinkedListQueue();
+
+		System.out.println(" ");
+		System.out.println("break");
+		System.out.println("LinkedList used below this");
+
+		list.Enqueue("Moosa");
+		list.Enqueue("Ahmed");
+		list.Enqueue("RG");
+		list.Enqueue("Shaheer");
+		list.Enqueue("Ebrahim");
+		list.Enqueue("Turab");
+
+		list.print();
+		System.out.println(list.queueSize);
+		System.out.println(list.Dequeue());
+
+		list.print();
+		System.out.println(list.queueSize);
+
+		list.print();
+		System.out.println(list.Dequeue());
+
+	}
+}
 
 }
