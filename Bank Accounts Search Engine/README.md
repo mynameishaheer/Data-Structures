@@ -24,7 +24,7 @@ each item (account number) refer to list of transaction
 
 You have to implement the following methods to build the search engine and write the bigOh
 of each method:
-• `insert(String AcNo)`
-• `search(String AcNo)` → return list of transactions corresponding to the accountNo.
-• `delete(String AcNo)`
-• `toString()` → display all accounts with list of transactions 
+- `insert(String AcNo)`
+- `search(String AcNo)` → return list of transactions corresponding to the accountNo.
+- `delete(String AcNo)`
+- `toString()` → display all accounts with list of transactions 
